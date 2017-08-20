@@ -24,7 +24,7 @@
            (prn [a b c] sum-triplet (pythagorean-triplet? a b c))
           (if (> sum-triplet sum)
             "not found"
-            (if (= (+ a b c) 1000)
+            (if (= (+ a b c) sum)
               triplet
               (recur [a b c] (inc scalar)))))))
 
